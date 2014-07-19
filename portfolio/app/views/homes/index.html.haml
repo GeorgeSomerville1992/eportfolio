@@ -4,6 +4,7 @@
   #container
     .box
       .container{style: "width:800px; height:500px; background-image: url(/assets/maingrayscale.jpeg);"}
+        .innercontainer.animated
         %header.positionleftbottom
           %h1 George Somerville
           %p Web Developer - Designer - Something else 
@@ -20,35 +21,68 @@
           .flip-back.flipback400-200  
             %p Ruby on Rails - Javascript - HTML5 - CSS3 - Git - GitHub - Terminal - Sublime
     .box
-      %img{src: "http://www.placehold.it/400x200"}/
+      %img{src: "http://www.placehold.it/400x230"}/
     
 
     .box
       .flip
         .textcontainerflip{style: "width:400px; height: 130px"}
-          .flip-front.flipfront200-130
+          .flip-front.flipfront400-130
             %h6 A Young enthusiastic junior/webdeveloper looking to expand his front end skill set and test his creativity
               
               
-          .flip-back.flipback400-200  
+          .flip-back.flipback400-130  
             %h6 Contact details
             %p phone: phone number 
             %p email: something
     .box       
-      .infocontainer{style: "width:200px; height: 130px;"}
+      .infocontainer
         %a{href: "#"}
-          %img{src: "https://s3-eu-west-1.amazonaws.com/niraj-portfolio/mark.png"}      
+          %img{src: "/assets/github.jpeg.png"}/ 
 
     .box
       .infocontainer{style: "width:200px; height: 130px;"}
         %a{href: "#"}
-          %p linked in picutre
-.section.project3container{style: "background-image: url(/assets/portfolio.jpeg.png);"}
-  %h1 Portfolio    
-  %p Music App - Wifiinder - Budgie Backpackers
-.large-10.columns{style: "padding: 0px"}     
-
-
+          %img{src: "/assets/linkedin.jpeg.png", style: "margin-left:25px;"}/
+.projectOneWrap          
+  .section.portfolio{style: "background-image: url(/assets/portfolio.jpeg.png);"}
+    %h1 Portfolio    
+    %p Music App - Budgie Backpackers - Wifinder
+  .large-6.columns{style: "padding: 0px"}         
+    .section
+      %img{src: "/assets/musicapp.jpeg.png"}/       
+  .large-6.columns{style: "padding: 0px"}  
+    .section
+      %h2 Music app
+      %p A music sharing website where artists can create profiles and share songs. This was the first app I developed and I use it as a reminder of how far I have come as a developer. This app was made using Ruby on Rails, HTML 5 and CSS 3.
+.projectTwoWrap    
+  .large-12.columns{style: "padding: 0px"} 
+    .section 
+      %img{src: "/assets/budgiebackpackers.jpeg.png"}
+    .large-6.columns 
+      %h3 Budgie Backpackers
+      %p Budgie Backpackers enables travelrs on a budiget to find the cheapest hostels/hotels  within a searched city or current location. They can also find various attractions via a search term and see whos checkin as well as reviews. Finally they will also be able to pickup on any discounts or deals on searched attractions (work in progress)
+    .large-6.columns 
+      %h3 laungages, libareis, framworks used..
+      %ul.contentLeft 
+        %li Ruby on Rails 
+        %li HTML 5
+        %li CSS 3/ Sass
+        %li Foundation Framework 
+        %li Javascript 
+      %ul.contentRight  
+        %li Google Maps/earth Api
+        %li Expedia Api
+        %li Foursquare Api
+        %li Yelp Api 
+.projectThreeWrap 
+  .section
+    .large-6.columns
+      %h2 Wifinder
+      %p Create and save your Wifi networks, view friends networks and share networks with your friends. This was my Second project and was developed within a group group. I developed the layout, homepage and created animation using CSS3 and javascript. 
+    .large-6.columns
+      %img{src: "/assets/wifinder.jpeg.png"}/   
+     
 
 
           
