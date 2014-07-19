@@ -8,4 +8,16 @@
     = javascript_include_tag "vendor/modernizr"
     = csrf_meta_tags
   %body
-    = yield
+    .medium-2.columns{style: "padding: 0px"}
+      %ul.side-nav{style: "padding: 0px"}
+        %li
+          %img{src: "http://www.placehold.it/200x200"}/
+        %li
+          %a{href: "#"} Download CV
+        %li
+          %a{href: "#"} A bit about me
+        %li
+          %a{href: "#"} Projects
+    .large-10.columns{style: "padding: 0px"}      
+      .maincontentcontiner
+        = yield

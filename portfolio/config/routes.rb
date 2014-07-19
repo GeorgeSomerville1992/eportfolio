@@ -1,4 +1,8 @@
 Portfolio::Application.routes.draw do
+
+    get "/masonry" => "homes#masonry"
+    root to: "homes#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
