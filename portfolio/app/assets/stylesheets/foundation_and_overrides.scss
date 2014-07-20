@@ -1,9 +1,16 @@
+
 @import "foundation/components/side-nav";
 @import "foundation/functions";
+
 $box1color: #3c763d;
 body{
   background-color: black;
   font-family: 'Roboto Condensed', sans-serif;
+}
+.stretch{
+  height:100%;
+  width:100%;
+  background-color:#7F0710;
 }
 .innercontainer{
   width:100%;
@@ -27,9 +34,10 @@ body{
     
   }
 
+
 }
-.maincontentcontiner{
-  height:400px;
+.maincontentcontainer{
+  height:600px;
   width:100%;
   overflow:scroll;
   color:white;
@@ -38,6 +46,11 @@ body{
   h1{
     text-transform: uppercase;
     font-family: 'Questrial', sans-serif;
+  }
+  section{
+    h2{
+      
+      }
   }
 }
 .box{
@@ -60,6 +73,14 @@ body{
   float:left;
 
 }
+.sectionbreaks{
+  width:100%;
+  height:300px;
+  background-color: black;
+  img{
+    margin-left:400px;
+  }
+}
 .custom-sidenav-class {
   @include side-nav(
     // Border color of divider
@@ -67,11 +88,12 @@ body{
     // Font size of nav items
     $font-size:1.2em,
     // Color of navigation links
-    $link-color:'#ccc',
+    $link-color:'#7F0710;',
     // Color of navigation links on hover
-    $link-color-hover: '#444'
+    $link-color-hover: '#7F0710;'
   );
 }
+
 .layoutcontainer{
   width:600px;
   height:800px;
@@ -105,7 +127,9 @@ body{
     .flipfront400-130{
       width:400px;
       height:130px;
-    
+      h6{
+        padding-top:30px;
+      }
 
     }
     .flipback400-130{
@@ -117,6 +141,14 @@ body{
 
 }
 
+ul.side-nav{
+    li a:not(.button){
+     color:white;
+    &:hover{
+      color:black;
+    }
+  }
+}
 
 .portfolio{
   height:300px;
@@ -124,6 +156,23 @@ body{
   // background-color: url(/assets/portfolio.jpeg)
 
 }
+
+  
+  .projectOneWrap{
+    height:300px;
+    width:100%;
+  }
+  .projectTwoWrap{
+    height:625px;
+    width:100%
+  }
+  .projectThreeWrap{
+    height:300px;
+    width:100%;
+  }
+
+
+
 .contentRight{
   float:right;
   margin-right:130px;
@@ -263,7 +312,7 @@ $primary-color: #7F0710;
 // $header-font-family: $body-font-family;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-color: white;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -1092,9 +1141,9 @@ $primary-color: #7F0710;
 // $side-nav-list-margin: rem-calc(0 0 7 0);
 
 // We use these to control link styles.
-// $side-nav-link-color: $primary-color;
-// $side-nav-link-color-active: scale-color($side-nav-link-color, $lightness: 30%);
-// $side-nav-link-color-hover: scale-color($side-nav-link-color, $lightness: 30%);
+ $side-nav-link-color: $primary-color;
+ $side-nav-link-color-active: scale-color($side-nav-link-color, $lightness: 30%);
+ $side-nav-link-color-hover: scale-color($side-nav-link-color, $lightness: 30%);
 // $side-nav-font-size: rem-calc(14);
 // $side-nav-font-weight: $font-weight-normal;
 // $side-nav-font-weight-active: $side-nav-font-weight;
